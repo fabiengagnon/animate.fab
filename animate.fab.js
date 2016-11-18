@@ -1,9 +1,10 @@
 /*
-	animate.fab 1.0
+	animate.fab 1.1
 	- Ajoute une classe lorsque l'élément apparait dans l'écran.
 	exemple: $('.shit-à-animer').animatefab();
 */
-$.fn.animatefab.function() {
+$.fn.animatefab = function() {
+	$(window).scrollTop(1);
 	acitem = $(this);
 	acclass = 'animatefab';
 	$(window).on('scroll', function () {
